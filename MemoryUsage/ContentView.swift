@@ -12,7 +12,7 @@ struct ContentView: View {
     @State var useMemoryForApp: Int = DoraemonMemoryUtil.useMemoryForApp()
     @State var totalMemoryForDevice: Int = DoraemonMemoryUtil.totalMemoryForDevice()
 
-    @State var data: [String: Data] = [:]
+    @State var data: [Data] = []
 
     var body: some View {
         VStack {
@@ -25,35 +25,41 @@ struct ContentView: View {
                     Text("获取内存使用情况")
                 }
                 Button(action: {
-                    self.increaseMemory(100)
+                    self.increaseMemory(1)
                     self.updateUI()
                 }) {
-                    Text("增加100MB内存使用")
+                    Text("增加约1MB内存使用")
                 }
                 Button(action: {
                     self.increaseMemory(10)
                     self.updateUI()
                 }) {
-                    Text("增加10MB内存使用")
+                    Text("增加约10MB内存使用")
                 }
                 Button(action: {
-                    self.increaseMemory(1)
+                    self.increaseMemory(100)
                     self.updateUI()
                 }) {
-                    Text("增加1MB内存使用")
+                    Text("增加约100MB内存使用")
                 }
                 Button(action: {
                     self.increaseMemory(1024)
                     self.updateUI()
                 }) {
-                    Text("增加1GB内存使用")
+                    Text("增加约1GB内存使用")
+                }
+                Button(action: {
+                    self.increaseMemory(1024 * 10)
+                    self.updateUI()
+                }) {
+                    Text("增加约10GB内存使用")
                 }
             }
         }
     }
 
     private func increaseMemory(_ count: Int) {
-        data[UUID().uuidString] = Data(repeating: 1, count: count * 1024 * 1024)
+        data.append(Data(repeating: 1, count: count * 1024 * 1024))
     }
 
     private func updateUI() {
