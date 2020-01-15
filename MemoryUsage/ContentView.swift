@@ -25,12 +25,6 @@ struct ContentView: View {
                     Text("获取内存使用情况")
                 }
                 Button(action: {
-                    self.increaseMemory(1024)
-                    self.updateUI()
-                }) {
-                    Text("增加1GB内存使用")
-                }
-                Button(action: {
                     self.increaseMemory(100)
                     self.updateUI()
                 }) {
@@ -47,6 +41,12 @@ struct ContentView: View {
                     self.updateUI()
                 }) {
                     Text("增加1MB内存使用")
+                }
+                Button(action: {
+                    self.increaseMemory(1024)
+                    self.updateUI()
+                }) {
+                    Text("增加1GB内存使用")
                 }
             }
         }
