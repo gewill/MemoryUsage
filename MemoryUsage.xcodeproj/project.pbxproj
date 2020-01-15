@@ -13,6 +13,7 @@
 		BE47490723CEC17500E7E943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47490623CEC17500E7E943 /* Assets.xcassets */; };
 		BE47490A23CEC17500E7E943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47490923CEC17500E7E943 /* Preview Assets.xcassets */; };
 		BE47490D23CEC17500E7E943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE47490B23CEC17500E7E943 /* LaunchScreen.storyboard */; };
+		BE47491A23CEE22500E7E943 /* DoraemonMemoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		BE47490923CEC17500E7E943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BE47490C23CEC17500E7E943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE47490E23CEC17500E7E943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE47491723CEE22400E7E943 /* MemoryUsage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryUsage-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonMemoryUtil.h; sourceTree = "<group>"; };
+		BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonMemoryUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				BE47490B23CEC17500E7E943 /* LaunchScreen.storyboard */,
 				BE47490E23CEC17500E7E943 /* Info.plist */,
 				BE47490823CEC17500E7E943 /* Preview Content */,
+				BE47491723CEE22400E7E943 /* MemoryUsage-Bridging-Header.h */,
+				BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */,
+				BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */,
 			);
 			path = MemoryUsage;
 			sourceTree = "<group>";
@@ -107,6 +114,7 @@
 				TargetAttributes = {
 					BE4748FC23CEC17400E7E943 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -149,6 +157,7 @@
 				BE47490123CEC17400E7E943 /* AppDelegate.swift in Sources */,
 				BE47490323CEC17400E7E943 /* SceneDelegate.swift in Sources */,
 				BE47490523CEC17400E7E943 /* ContentView.swift in Sources */,
+				BE47491A23CEE22500E7E943 /* DoraemonMemoryUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +293,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryUsage/Preview Content\"";
 				DEVELOPMENT_TEAM = RLK76T8Y89;
@@ -295,6 +305,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gewill.MemoryUsage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryUsage/MemoryUsage-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryUsage/Preview Content\"";
 				DEVELOPMENT_TEAM = RLK76T8Y89;
@@ -315,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gewill.MemoryUsage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MemoryUsage/MemoryUsage-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
