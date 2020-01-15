@@ -28,6 +28,7 @@
 		BE47491723CEE22400E7E943 /* MemoryUsage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryUsage-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonMemoryUtil.h; sourceTree = "<group>"; };
 		BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonMemoryUtil.m; sourceTree = "<group>"; };
+		BE47491B23CEF03600E7E943 /* MemoryUsage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoryUsage.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +61,7 @@
 		BE4748FF23CEC17400E7E943 /* MemoryUsage */ = {
 			isa = PBXGroup;
 			children = (
+				BE47491B23CEF03600E7E943 /* MemoryUsage.entitlements */,
 				BE47490023CEC17400E7E943 /* AppDelegate.swift */,
 				BE47490223CEC17400E7E943 /* SceneDelegate.swift */,
 				BE47490423CEC17400E7E943 /* ContentView.swift */,
@@ -294,7 +296,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MemoryUsage/MemoryUsage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryUsage/Preview Content\"";
 				DEVELOPMENT_TEAM = RLK76T8Y89;
 				ENABLE_PREVIEWS = YES;
@@ -305,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gewill.MemoryUsage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MemoryUsage/MemoryUsage-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -317,7 +322,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MemoryUsage/MemoryUsage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"MemoryUsage/Preview Content\"";
 				DEVELOPMENT_TEAM = RLK76T8Y89;
 				ENABLE_PREVIEWS = YES;
@@ -328,6 +335,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.gewill.MemoryUsage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "MemoryUsage/MemoryUsage-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
