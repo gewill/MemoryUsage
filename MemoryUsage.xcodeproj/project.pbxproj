@@ -14,6 +14,17 @@
 		BE47490A23CEC17500E7E943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE47490923CEC17500E7E943 /* Preview Assets.xcassets */; };
 		BE47490D23CEC17500E7E943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE47490B23CEC17500E7E943 /* LaunchScreen.storyboard */; };
 		BE47491A23CEE22500E7E943 /* DoraemonMemoryUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */; };
+		BEFDBDAB23CF250C00924E44 /* DoraemonCPUUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDAA23CF250C00924E44 /* DoraemonCPUUtil.m */; };
+		BEFDBDB123CF271300924E44 /* StateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDB023CF271300924E44 /* StateModel.swift */; };
+		BEFDBDB423D0025500924E44 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDB323D0025500924E44 /* Store.swift */; };
+		BEFDBDB623D0026200924E44 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDB523D0026200924E44 /* AppState.swift */; };
+		BEFDBDB823D0027500924E44 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDB723D0027500924E44 /* AppError.swift */; };
+		BEFDBDBA23D0028000924E44 /* AppCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDB923D0028000924E44 /* AppCommand.swift */; };
+		BEFDBDBC23D0028F00924E44 /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDBB23D0028F00924E44 /* AppAction.swift */; };
+		BEFDBDBE23D011C900924E44 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDBD23D011C900924E44 /* FileHelper.swift */; };
+		BEFDBDC223D0120800924E44 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDC123D0120800924E44 /* FileStorage.swift */; };
+		BEFDBDC423D0387C00924E44 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDC323D0387C00924E44 /* Helpers.swift */; };
+		BEFDBDC723D03B8500924E44 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFDBDC623D03B8500924E44 /* Int.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,18 @@
 		BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonMemoryUtil.h; sourceTree = "<group>"; };
 		BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonMemoryUtil.m; sourceTree = "<group>"; };
 		BE47491B23CEF03600E7E943 /* MemoryUsage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MemoryUsage.entitlements; sourceTree = "<group>"; };
+		BEFDBDA923CF250B00924E44 /* DoraemonCPUUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoraemonCPUUtil.h; sourceTree = "<group>"; };
+		BEFDBDAA23CF250C00924E44 /* DoraemonCPUUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoraemonCPUUtil.m; sourceTree = "<group>"; };
+		BEFDBDB023CF271300924E44 /* StateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateModel.swift; sourceTree = "<group>"; };
+		BEFDBDB323D0025500924E44 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BEFDBDB523D0026200924E44 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BEFDBDB723D0027500924E44 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BEFDBDB923D0028000924E44 /* AppCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommand.swift; sourceTree = "<group>"; };
+		BEFDBDBB23D0028F00924E44 /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
+		BEFDBDBD23D011C900924E44 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		BEFDBDC123D0120800924E44 /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		BEFDBDC323D0387C00924E44 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		BEFDBDC623D03B8500924E44 /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +88,15 @@
 				BE47490023CEC17400E7E943 /* AppDelegate.swift */,
 				BE47490223CEC17400E7E943 /* SceneDelegate.swift */,
 				BE47490423CEC17400E7E943 /* ContentView.swift */,
+				BEFDBDBF23D011D400924E44 /* State */,
+				BEFDBDB023CF271300924E44 /* StateModel.swift */,
 				BE47490623CEC17500E7E943 /* Assets.xcassets */,
 				BE47490B23CEC17500E7E943 /* LaunchScreen.storyboard */,
 				BE47490E23CEC17500E7E943 /* Info.plist */,
 				BE47490823CEC17500E7E943 /* Preview Content */,
 				BE47491723CEE22400E7E943 /* MemoryUsage-Bridging-Header.h */,
-				BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */,
-				BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */,
+				BEFDBDC523D03B4B00924E44 /* Extensions */,
+				BEFDBDAD23CF251C00924E44 /* Utilities */,
 			);
 			path = MemoryUsage;
 			sourceTree = "<group>";
@@ -82,6 +107,56 @@
 				BE47490923CEC17500E7E943 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BEFDBDAD23CF251C00924E44 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BE47491823CEE22500E7E943 /* DoraemonMemoryUtil.h */,
+				BE47491923CEE22500E7E943 /* DoraemonMemoryUtil.m */,
+				BEFDBDA923CF250B00924E44 /* DoraemonCPUUtil.h */,
+				BEFDBDAA23CF250C00924E44 /* DoraemonCPUUtil.m */,
+				BEFDBDBD23D011C900924E44 /* FileHelper.swift */,
+				BEFDBDC323D0387C00924E44 /* Helpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BEFDBDB223D0024700924E44 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				BEFDBDB323D0025500924E44 /* Store.swift */,
+				BEFDBDB523D0026200924E44 /* AppState.swift */,
+				BEFDBDBB23D0028F00924E44 /* AppAction.swift */,
+				BEFDBDB923D0028000924E44 /* AppCommand.swift */,
+				BEFDBDB723D0027500924E44 /* AppError.swift */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
+		BEFDBDBF23D011D400924E44 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BEFDBDB223D0024700924E44 /* DataFlow */,
+				BEFDBDC023D011E500924E44 /* FileIO */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		BEFDBDC023D011E500924E44 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				BEFDBDC123D0120800924E44 /* FileStorage.swift */,
+			);
+			path = FileIO;
+			sourceTree = "<group>";
+		};
+		BEFDBDC523D03B4B00924E44 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEFDBDC623D03B8500924E44 /* Int.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +232,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE47490123CEC17400E7E943 /* AppDelegate.swift in Sources */,
+				BEFDBDC423D0387C00924E44 /* Helpers.swift in Sources */,
+				BEFDBDBC23D0028F00924E44 /* AppAction.swift in Sources */,
 				BE47490323CEC17400E7E943 /* SceneDelegate.swift in Sources */,
+				BEFDBDB823D0027500924E44 /* AppError.swift in Sources */,
 				BE47490523CEC17400E7E943 /* ContentView.swift in Sources */,
+				BEFDBDB623D0026200924E44 /* AppState.swift in Sources */,
+				BEFDBDC223D0120800924E44 /* FileStorage.swift in Sources */,
+				BEFDBDB423D0025500924E44 /* Store.swift in Sources */,
 				BE47491A23CEE22500E7E943 /* DoraemonMemoryUtil.m in Sources */,
+				BEFDBDB123CF271300924E44 /* StateModel.swift in Sources */,
+				BEFDBDAB23CF250C00924E44 /* DoraemonCPUUtil.m in Sources */,
+				BEFDBDC723D03B8500924E44 /* Int.swift in Sources */,
+				BEFDBDBA23D0028000924E44 /* AppCommand.swift in Sources */,
+				BEFDBDBE23D011C900924E44 /* FileHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

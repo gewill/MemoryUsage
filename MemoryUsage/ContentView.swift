@@ -9,21 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var useMemoryForApp: Int = DoraemonMemoryUtil.useMemoryForApp()
-    @State var totalMemoryForDevice: Int = DoraemonMemoryUtil.totalMemoryForDevice()
+    @EnvironmentObject var store: Store
+
+    var homepage: AppState.Homepage {
+        store.appState.homepage
+    }
 
     @State var data: [Data] = []
 
     var body: some View {
         VStack {
             VStack(spacing: 12) {
-                Text("已使用内存:\(useMemoryForApp)MB, 亦:\(useMemoryForApp.toKilo)GB")
-                Text("设备总内存:\(totalMemoryForDevice)MB, 亦:\(totalMemoryForDevice.toKilo)GB")
-                Button(action: {
-                    self.updateUI()
-                }) {
-                    Text("获取内存使用情况")
-                }
+                Text("设备CPU使用率:\(homepage.checker.deviceState.cpuUsage)")
+                Text("已使用内存:\(homepage.checker.deviceState.memoryUsage)MB, 亦:\(homepage.checker.deviceState.memoryUsage.toKilo)GB")
+                Text("设备总内存:\(homepage.checker.deviceState.totalMemory)MB, 亦:\(homepage.checker.deviceState.totalMemory.toKilo)GB")
+                Divider()
                 Button(action: {
                     self.increaseMemory(1)
                     self.updateUI()
@@ -63,19 +63,13 @@ struct ContentView: View {
     }
 
     private func updateUI() {
-        useMemoryForApp = DoraemonMemoryUtil.useMemoryForApp()
-        totalMemoryForDevice = DoraemonMemoryUtil.totalMemoryForDevice()
+        store.dispatch(.updateUsage(deviceState: AppState.DeviceState()))
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-    }
-}
-
-extension Int {
-    var toKilo: String {
-        return String(format: "%.2f", Double(self) / 1024)
+        return ContentView()
+            .environmentObject(Store())
     }
 }
