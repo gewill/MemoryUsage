@@ -20,8 +20,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             VStack(spacing: 12) {
-                Text("设备CPU使用率:\(homepage.checker.deviceState.cpuUsage)")
-                Text("已使用内存:\(homepage.checker.deviceState.memoryUsage)MB, 亦:\(homepage.checker.deviceState.memoryUsage.toKilo)GB")
+                Text("App的CPU使用率:\(homepage.checker.deviceState.cpuUsage)")
+                Text("App已使用内存:\(homepage.checker.deviceState.memoryUsage)MB, 亦:\(homepage.checker.deviceState.memoryUsage.toKilo)GB")
                 Text("设备总内存:\(homepage.checker.deviceState.totalMemory)MB, 亦:\(homepage.checker.deviceState.totalMemory.toKilo)GB")
                 Divider()
                 Button(action: {
