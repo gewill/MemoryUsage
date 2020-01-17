@@ -11,3 +11,12 @@
 
 - [x] 改为Redux结构，实时刷新CPU和内存使用率
 - [ ] 完成日志功能
+
+## 致谢
+
+1. [DoraemonKit](https://github.com/didi/DoraemonKit)
+2. [王巍](https://weibo.com/onevcat) 的 [SwiftUI 与 Combine 编程](https://objccn.io/products/swift-ui)
+
+## 协议
+
+MIT
