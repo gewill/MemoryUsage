@@ -5,7 +5,9 @@
 
 ## Demo
 
-![ScreenRecord 2020-01-17 18-59-17](./Assets/ScreenRecord 2020-01-17 18-59-17.gif)![Screenshot 2020-01-17 at 18.51.11](./Assets/Screenshot 2020-01-17 at 18.51.11.png)
+![ScreenRecord2020-01-17-18-59-17](./Assets/ScreenRecord2020-01-17-18-59-17.gif)
+
+![Screenshot2020-01-17-18.51.11](./Assets/Screenshot2020-01-17-18.51.11.png)
 
 ## TODO
 
