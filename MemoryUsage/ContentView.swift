@@ -59,7 +59,9 @@ struct ContentView: View {
     }
 
     private func increaseMemory(_ count: Int) {
-        data.append(Data(repeating: 1, count: count * 1024 * 1024))
+        DispatchQueue.global().async {
+            self.data.append(Data(repeating: 1, count: count * 1024 * 1024))
+        }
     }
 
     private func updateUI() {
