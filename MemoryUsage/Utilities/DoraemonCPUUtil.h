@@ -10,7 +10,7 @@
 
 @interface DoraemonCPUUtil : NSObject
 
-//获取CPU使用率
+///获取CPU使用率
 + (CGFloat)cpuUsageForApp;
 
 @end

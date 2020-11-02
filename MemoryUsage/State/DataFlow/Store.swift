@@ -44,7 +44,6 @@ class Store: ObservableObject {
     }
 
     static func reduce(state: AppState, action: AppAction) -> (AppState, AppCommand?) {
-        var appState = state
         var appCommand: AppCommand?
 
         switch action {
